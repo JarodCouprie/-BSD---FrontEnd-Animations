@@ -45,7 +45,7 @@ body{
     height: 150px;
     background-color: yellow;
     animation-name: spining;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -56,7 +56,7 @@ body{
         background-color: yellow;
     }
     to{
-        transform:rotate(360deg);
+        transform:rotate(720deg);
         background-color: red;
     }
 }
@@ -120,7 +120,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
+    padding: 40px;
     background-color: var(--grey);
     border-radius: 10px;
 }
@@ -177,14 +177,130 @@ body{
 
 #section-6{
     grid-area: 1/4/2/5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
+    padding: 10px;
     background-color: var(--grey);
     border-radius: 10px;
+    text-align: center;
 }
+
+#section-6 h2{
+    padding: 30px;
+}
+
+#square-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.square{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#square-1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    animation-name: square-around;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#square-2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    animation-name: square-around;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+#square-3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    animation-name: square-around;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+#square-4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    animation-name: square-around;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+#square-5{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    animation-name: square-around;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+#square-6{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    animation-name: square-around;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+
+@keyframes square-around {
+    0%{
+        bottom: 0;
+        right: 0;
+    }
+    25%{
+        transform: rotate(360deg);
+        bottom: 0;
+        right: 95%;
+        background-color: red;
+    }
+    50%{
+        transform: rotate(720deg);
+        bottom: 90%;
+        right: 95%;
+        background-color: blue;
+    }
+    75%{
+        transform: rotate(1080deg);
+        bottom: 90%;
+        right: 0;
+        background-color: yellow;
+    }
+    100%{
+        transform: rotate(1440deg);
+        bottom: 0;
+        right: 0;
+        background-color: green;
+    }
+}
+
+
+
 
 /*------------------Section-7------------------*/
 
