@@ -41,14 +41,13 @@ body{
     width: 150px;
     height: 150px;
     background-color: yellow;
-    animation-name: spining-square;
+    animation-name: spining;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 2s;
 }
 
-@keyframes spining-square {
+@keyframes spining {
     from{
         transform: rotate(0deg);
         background-color: yellow;
@@ -70,6 +69,43 @@ body{
     padding: 40px;
     background-color: white;
     border-radius: 10px;
+}
+
+#bouncing-ball-container{
+    border:1px solid green;
+    width: 30px;
+    height: 180px;
+}
+
+#bouncing-ball{
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    position: relative;
+    top: 0;
+    background-color: green;
+    animation: linear;
+    animation-name: bouncing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncing {
+    0%{
+        top: 0;
+    }
+    50%,60%,70%,100%{
+        top: 150px;
+        animation: linear;
+    }
+    60%{
+        top: 100px;
+        animation: linear;
+    }
+    80%{
+        top: 130px;
+        animation: linear;
+    }
 }
 
 /*------------------Section-4------------------*/
