@@ -23,8 +23,39 @@ body{
 
 #section-1{
     grid-area: 1/1/4/2;
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
+
+#folder-container{
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(238, 238, 238);
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+#folder-container:hover{
+    cursor: pointer;
+    animation-name: folder;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes folder {
+    from{
+        height: 40px;
+        align-items: flex-start;
+    }
+    to{
+        height: 100%;
+    }
+}
+
 
 
 /*------------------Section-2------------------*/
@@ -181,16 +212,11 @@ body{
     background-color: var(--grey);
     border-radius: 10px;
     text-align: center;
+    position:relative;
 }
 
 #section-6 h2{
     padding: 30px;
-}
-
-#square-container{
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 
 .square{
@@ -204,65 +230,65 @@ body{
 
 #square-1{
     position: absolute;
-    bottom: 0;
+    bottom: 60%;
     right: 0;
     background-color: yellow;
     animation-name: square-around;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
 #square-2{
     position: absolute;
-    bottom: 0;
+    bottom: 50%;
     right: 0;
     background-color: yellow;
     animation-name: square-around;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
 }
 
 #square-3{
     position: absolute;
-    bottom: 0;
+    bottom: 40%;
     right: 0;
     background-color: yellow;
     animation-name: square-around;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
 }
 
 #square-4{
     position: absolute;
-    bottom: 0;
+    bottom: 30%;
     right: 0;
     background-color: yellow;
     animation-name: square-around;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
 }
 
 #square-5{
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     right: 0;
     background-color: yellow;
     animation-name: square-around;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-delay: 4s;
 }
 
 #square-6{
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     right: 0;
     background-color: yellow;
     animation-name: square-around;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-delay: 5s;
 }
@@ -298,9 +324,6 @@ body{
         background-color: green;
     }
 }
-
-
-
 
 /*------------------Section-7------------------*/
 
