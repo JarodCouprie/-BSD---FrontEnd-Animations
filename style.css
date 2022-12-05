@@ -246,7 +246,6 @@ body{
     animation-delay: 2.5s;
 }
 
-
 @keyframes square-around {
     0%{
         right: 0;
@@ -296,8 +295,6 @@ body{
     height: 100%;
     position: relative;
 }
-
-
 
 #carousel-container {
     width: 40px;
@@ -350,14 +347,4 @@ body{
 
 #section-8{
     grid-area: 1/5/4/6;
-}
-
-/*------------------Colour classes------------------*/
-
-.black{
-    background-color: #333;
-}
-
-.grey{
-    background-color: grey;
 }
